@@ -1,0 +1,72 @@
+
+<!-- clean modern website template -->
+
+<!-- Made by Waffle summer/spring 2019 -->
+
+
+
+<html>
+<title>Template</title>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="one.css" type="text/css">
+</head>
+<body>
+<div class="big">
+    <div class="sideMenu">
+        <h3 class="sideMenuButtons">search</h3>
+        <h3 class="sideMenuButtons">something else</h3>
+        <h3 class="sideMenuButtons">itemstuff</h3>
+        <h3 class="sideMenuButtons">Waffle made this</h3>
+        <h3 class="sideMenuButtons">petism</h3>
+    </div>
+<div class="mainContainer">
+    <div id="leftContainer">
+        <div class="sideSlider">
+
+        </div>
+    </div>
+    <div id="middleContainer">
+        <div class="topContentContainer">
+            <h1>Template</h1>
+        </div>
+        <div class="bottomContentContainer">
+            <div class="middleContent">culumn1</div>
+            <div class="middleContent">column2</div>
+        </div>
+    </div>
+    <div id="rightContainer">
+        <div class="sideButtons"></div>
+        <div class="sideButtons"></div>
+        <div class="sideButtons"></div>
+    </div>
+</div>
+    <div class="footer">
+        <h4>stuff</h4><h4>more stuff</h4><h4>privacy blah blah</h4><h4>about stuff</h4><h4>bottom text</h4>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    function off() {
+        expanded = !expanded
+    }
+    let expanded = false;
+    const button = document.querySelector('#leftContainer .sideSlider');
+    button.onmouseover = () => {
+        if (expanded) {
+            document.querySelector('.mainContainer').classList.remove('expanded');
+        }
+        else {
+            document.querySelector('.mainContainer').classList.add('expanded');
+        }
+
+        if (expanded) {
+            document.querySelector('.sideSlider').classList.remove('expanded');
+        }
+        else {
+            document.querySelector('.sideSlider').classList.add('expanded');
+        }
+        setTimeout(off, 200);
+    }
+</script>
